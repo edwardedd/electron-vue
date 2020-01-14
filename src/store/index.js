@@ -5,11 +5,11 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+      value: 0
   },
   mutations: {
-  },
-  actions: {
-  },
-  modules: {
-  }
-})
+      updateValue ( state, value){
+        state.value = value;
+      }
+    }
+  })
